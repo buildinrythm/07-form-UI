@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Accessible Form UI</title>
 </head>
 <body>
@@ -13,11 +15,25 @@
         <input id="full-name" placeholder="What should we call you?" type="text" autocomplete="name"> 
         <label for="email">Email</label>
         <input id="email" placeholder="Enter your email" type="email" autocomplete="email">
-        <label for="password">Password</label>
+        <label for="password">Enter Password</label>
         <input id="password" placeholder="XXXXXXXXX" type="password" autocomplete="new-password">
-        <label for="confirm-password">Password</label>
+        <label for="confirm-password">Confirm Password</label>
         <input id="confirm-password" placeholder="XXXXXXXXX" type="password" autocomplete="current-password">
         <button id="update-profile">Update Profile</button>
+        </div>
+
+        <div class="form-right">
+            <div class="progress-percent">
+                <img src="progress.png" alt="progress bar">
+            </div>
+            <p>Profile Completeness</p>
+            <div class="checklist-container">
+                <p class="strike">Create Account</p>
+                <p class="strike">Update Roadmap Progress</p>
+                <p class="strike">Setup Public Profile</p>
+                <p>Complete your first project</p>
+                <p>Invite your friends</p>
+            </div>
         </div>
     </div>
 </body>
