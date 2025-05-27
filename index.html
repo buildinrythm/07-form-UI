@@ -14,12 +14,13 @@
         <label for="full-name">Full Name</label>
         <input id="full-name" placeholder="What should we call you?" type="text" autocomplete="name"> 
         <label for="email">Email</label>
-        <input id="email" placeholder="Enter your email" type="email" autocomplete="email">
+        <input id="email" type="email" aria-required="true" aria-invalid="false" aria-describedby="email-error" />
+<p id="email-error" class="error-message" aria-live="polite" hidden>Please enter a valid email</p>
         <label for="password">Enter Password</label>
         <input id="password" placeholder="XXXXXXXXX" type="password" autocomplete="new-password">
         <label for="confirm-password">Confirm Password</label>
         <input id="confirm-password" placeholder="XXXXXXXXX" type="password" autocomplete="current-password">
-        <button id="update-profile">Update Profile</button>
+        <button id="update-profile" type="submit">Update Profile</button>
         </div>
 
         <div class="form-right">

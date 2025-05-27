@@ -80,8 +80,17 @@ input{
     background-color: black;
     color: white;
     border-radius: 20px;
+    transition: background-color 0.4s ease, transform 0.1s ;
 }
 
+#update-profile:hover{
+    background-color: #003a8c;
+}
+
+#update-profile:active {
+    background-color: white;
+    transform: scale(0.9);
+}
 .checklist-container {
     background-color: rgb(195, 194, 194);
     border-radius: 18px;
@@ -97,3 +106,31 @@ input{
     color: rgb(103, 103, 103);
 }
 
+.error-message {
+    color: red;
+    font-size: 1rem;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #005fcc; /* bright blue outline */
+  outline-offset: 2px;        /* space between outline and element */
+  background-color: #e6f0ff;  /* subtle background highlight */
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Hide error messages by default */
+.error-message[hidden] {
+  display: none;
+}
+
+/* Show error message when input is invalid */
+input[aria-invalid="true"] + .error-message {
+  display: block;
+}
