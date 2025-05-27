@@ -90,9 +90,17 @@ input{
 }
 
 .checklist-container {
-    background-color: grey;
+    background-color: rgb(195, 194, 194);
+    border-radius: 18px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
+.checklist-title{
+    margin-top: 80px;
+}
 .strike{
     text-decoration: line-through;
+    color: rgb(103, 103, 103);
 }
+
